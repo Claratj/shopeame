@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let item of list">
+        <figure>
+            <img src="{{item.image}}">
+            <figcaption>{{item.description}}</figcaption>
+        </figure>
+        <h2>{{item.price}}€</h2>
+        <div>
+            <div *ngIf="item.stars === 5">
+                <i class='bx bxs-star' style='color:#ffce20'></i>
+            </div>
+            <div *ngIf="item.stars > 4">
+                <i class='bx bxs-star' style='color:#ffce20'></i>
+            </div>
+            <div *ngIf="item.stars === 4">
+                <i class='bx bxs-star' style='color:#ffce20'></i>
+            </div>
+            <div *ngIf="item.stars > 3">
+                <i class='bx bxs-star' style='color:#ffce20'></i>
+            </div>
+            <div *ngIf="item.stars === 3">
+                <i class='bx bxs-star' style='color:#ffce20'></i>
+            </div>
+            <div *ngIf="item.stars > 2">
+                <i class='bx bxs-star' style='color:#ffce20'></i>
+            </div>
+            <div *ngIf="item.stars === 2">
+                <i class='bx bxs-star' style='color:#ffce20'></i>
+            </div>
+            <div *ngIf="item.stars > 1">
+                <i class='bx bxs-star' style='color:#ffce20'></i>
+            </div>
+            <div *ngIf="item.stars === 1">
+                <i class='bx bxs-star' style='color:#ffce20'></i>
+            </div>
+            <div *ngIf="item.stars % 1 !==0 ">
+                <i class='bx bxs-star-half' style='color:#ffce20'></i>
+            </div>
+            <p>{{item.stars}}</p>
+        </div>
+    </div>
+</div>
