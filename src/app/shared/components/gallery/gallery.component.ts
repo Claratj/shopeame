@@ -7,11 +7,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  changeView: string;
+
   @Input() list:any;
 
   constructor() { }
 
   ngOnInit(): void {
+
+  
   }
 
 }
