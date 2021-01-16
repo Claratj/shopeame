@@ -3,6 +3,7 @@
 .p-gallery {
 	padding: 2rem 2rem;
 	justify-content: flex-end;
+	font-family: var(--font-family-base);
 	&__figure {
 		margin: 16px 0;
 		text-align: center;
@@ -17,4 +18,8 @@
 .card {
 	height: 472px;
 	padding: 16px;
+}
+.btn-display {
+	width: 68px;
+	height: 36px;
 }

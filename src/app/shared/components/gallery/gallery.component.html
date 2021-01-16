@@ -1,10 +1,16 @@
 <div class="p-gallery">
+    <h2>Listado de Productos ({{list.length}})</h2>
+    <div class="display-options">
+        <button class="btn-display"><img src="../../../../assets/img/list.svg"></button>
+        <button class="btn-display"><img src="../../../../assets/img/grid.svg"></button>
+        <input>
+    </div>
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 card" *ngFor="let item of list">
             <figure class="p-gallery__figure">
                 <img class="p-gallery__img" src="{{item.image}}">
-                <figcaption>{{item.description}}</figcaption>
             </figure>
+            <figcaption>{{item.description}}</figcaption>
             <h2>{{item.price}}€</h2>
             <div class="d-flex justify-content-around align-items-center">
                 <div class="d-flex justify-content-center">
