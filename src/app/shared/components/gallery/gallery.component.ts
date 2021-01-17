@@ -54,6 +54,7 @@ export class GalleryComponent implements OnInit {
       stars: item.stars,
       image: item.image
     }
-    
+    return productGestion;
+
   }
 }
