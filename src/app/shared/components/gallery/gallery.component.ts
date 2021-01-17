@@ -36,10 +36,10 @@ export class GalleryComponent implements OnInit {
   }
 
   listView() {
-    this.changeView = 'col-12 d-flex';
-    this.listActive = '';
-    this.figureChange = 'p-gallery__figure-list align-items-center ';
-    this.info = ''
+    this.changeView = 'col-12 ';
+    this.listActive = 'd-sm-flex';
+    this.figureChange = 'p-gallery__figure-list align-items-center';
+    this.info = 'flex-fill'
     this.ratingBuy = 'justify-content-between'
 
   }
