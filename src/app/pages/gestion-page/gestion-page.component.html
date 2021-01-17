@@ -1,0 +1,45 @@
+<h3>Creación/edición de productos</h3>
+
+<form [formGroup]="gestionForm" (ngSubmit)="submitGestionForm()">
+    <label for="nombre">Nombre del producto:</label>
+    <input type="text" id="nombre" placeholder="Por ej: Tiesto para planta" formControlName="nombre" />
+    <p *ngIf="submitted && !gestionForm.get('nombre').valid">
+        El nombre del producto es obligatorio y debe tener como minimo 5 caracteres.
+    </p>
+
+    <label for="precio">Precio:</label>
+    <input type="text" id="precio" placeholder="Por ej: 9.50" formControlName="precio" />
+    <p *ngIf="submitted && !gestionForm.get('precio').valid">
+        El precio del producto es obligatorio y debe tener como minimo 1 caracter.
+    </p>
+
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion" placeholder="Por ej: Lo mas vendido de este mes"
+        formControlName="descripcion" />
+    <p *ngIf="submitted && !gestionForm.get('descripcion').valid">
+        La descripción del producto es obligatoria y debe tener como maximo 35
+        caracteres.
+    </p>
+
+    <label for="rutaImagen">Ruta de la imagen:</label>
+    <input type="text" id="rutaImagen" placeholder="Por ej: http://blabla.com/img.jpg" formControlName="rutaImagen" />
+    <p *ngIf="submitted && !gestionForm.get('rutaImagen').valid">
+        La ruta de la imagen del producto es obligatoria.
+    </p>
+
+    <label for="valoracion">Valoración:</label>
+    <input type="text" id="valoracion" placeholder="Por ej: 4.28" formControlName="valoracion" />
+
+    <div>
+        <input type="submit" value="Guardar" (click)="addToProducts()" />
+    </div>
+</form>
+<!-- Hacemos un div con los valore del objeto que vamos introduciendo en el formulario -->
+<div>
+    <p>Preview del producto:</p>
+    <img src="{{ newProduct.rutaImagen }}" alt="" />
+    <p>{{ newProduct.nombre }}</p>
+    <h4>{{ newProduct.precio }}</h4>
+    <p>{{ newProduct.descripcion }}</p>
+    <p>{{ newProduct.valoracion }}</p>
+</div>
