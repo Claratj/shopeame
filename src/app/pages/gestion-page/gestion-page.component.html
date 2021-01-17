@@ -43,3 +43,12 @@
     <p>{{ newProduct.descripcion }}</p>
     <p>{{ newProduct.valoracion }}</p>
 </div>
+
+<div *ngIf="edit !== ''">
+    <p>Preview del producto:</p>
+    <img src="{{ edit.image }}" alt="" />
+    <p>{{ edit.name }}</p>
+    <h4>{{ edit.price }}</h4>
+    <p>{{ edit.description }}</p>
+    <p>{{ edit.stars }}</p>
+</div>

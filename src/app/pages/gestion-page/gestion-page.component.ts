@@ -12,10 +12,10 @@ export class GestionPageComponent implements OnInit {
   gestionForm: any = [];
   submitted = false;
   newProduct: any = {};
+  edit: any;
 
   constructor(private formBuilder: FormBuilder, private productsService: ProductsService) { }
 
-  edit: any;
 
   ngOnInit(): void {
 
