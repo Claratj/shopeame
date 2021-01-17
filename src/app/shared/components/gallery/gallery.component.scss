@@ -1,13 +1,1 @@
-@import '../../../../styles/imports/settings.imports';
 
-.p-gallery {
-	&__figure {
-		margin: 16px 0;
-		text-align: center;
-		cursor: pointer;
-	}
-	&__img {
-		width: 100%;
-		object-fit: cover;
-	}
-}
