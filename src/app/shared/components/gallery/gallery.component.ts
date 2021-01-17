@@ -23,15 +23,17 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // this.gridView();
-    this.listView();
+    this.gridView();
+    // this.listView();
     
   }
   
   gridView(){
     this.changeView = 'col-12 col-sm-6 col-md-4 col-lg-3 card';
     this.figureChange = 'p-gallery__figure-grid';
-    this.ratingBuy = 'justify-content-around '
+    this.ratingBuy = 'justify-content-around ';
+    this.listActive = '';
+    this.info = '';
 
   }
 
@@ -40,8 +42,7 @@ export class GalleryComponent implements OnInit {
     this.listActive = 'd-sm-flex';
     this.figureChange = 'p-gallery__figure-list align-items-center';
     this.info = 'flex-fill'
-    this.ratingBuy = 'justify-content-between'
-
+    this.ratingBuy = 'justify-content-between';
   }
 
 }
