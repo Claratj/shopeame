@@ -11,4 +11,8 @@ export class ProductsService {
   getProducts(){
     return this.http.get('http://localhost:3000/products')
   }
+
+  editItem(productGestion){
+    console.log(productGestion);
+  }
 }

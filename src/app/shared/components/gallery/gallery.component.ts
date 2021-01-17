@@ -1,3 +1,4 @@
+import { ProductsService } from './../../services/products.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -19,7 +20,7 @@ export class GalleryComponent implements OnInit {
 
   @Input() list:any;
 
-  constructor() { }
+  constructor(private productsService: ProductsService) { }
 
   ngOnInit(): void {
 
@@ -54,7 +55,8 @@ export class GalleryComponent implements OnInit {
       stars: item.stars,
       image: item.image
     }
-    return productGestion;
+    this.productsService.editItem(productGestion);
+
 
   }
 }

@@ -1,3 +1,4 @@
+import { ProductsService } from './../../shared/services/products.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
@@ -12,9 +13,15 @@ export class GestionPageComponent implements OnInit {
   submitted = false;
   newProduct: any = {};
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private productsService: ProductsService) { }
+
+  itemToEdit: any;
+  productGestion: any;
 
   ngOnInit(): void {
+
+    this.itemToEdit = this.productsService.editItem(this.productGestion);
+
     this.gestionForm = this.formBuilder.group({
       nombre: ['', [Validators.required, Validators.minLength(5)]],
       precio: ['', [Validators.required, Validators.minLength(1)]],
@@ -47,6 +54,8 @@ export class GestionPageComponent implements OnInit {
   addToProducts() {
     this.newProduct.push();
   }
+
+
 
 }
 
