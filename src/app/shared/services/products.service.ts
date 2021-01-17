@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class ProductsService {
 
+  itemData: any;
+
   constructor(private http: HttpClient) { }
 
   getProducts(){
@@ -13,6 +15,13 @@ export class ProductsService {
   }
 
   editItem(productGestion){
-    console.log(productGestion);
+    this.itemData = productGestion; 
   }
+
+  getItem(){
+    let tempVar = this.itemData;
+    return tempVar
+  }
+
+
 }

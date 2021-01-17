@@ -15,12 +15,12 @@ export class GestionPageComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder, private productsService: ProductsService) { }
 
-  itemToEdit: any;
-  productGestion: any;
+  edit: any;
 
   ngOnInit(): void {
 
-    this.itemToEdit = this.productsService.editItem(this.productGestion);
+    this.edit = this.productsService.getItem();
+    console.log(this.edit)
 
     this.gestionForm = this.formBuilder.group({
       nombre: ['', [Validators.required, Validators.minLength(5)]],
@@ -54,7 +54,6 @@ export class GestionPageComponent implements OnInit {
   addToProducts() {
     this.newProduct.push();
   }
-
 
 
 }
