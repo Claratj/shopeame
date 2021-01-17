@@ -6,7 +6,9 @@
             <button class="btn-display" (click)="gridView()"><img src="../../../../assets/img/grid.svg"></button>
         </div>
     </div>
-    <input>
+    <div class="d-flex justify-content-end">
+        <input type="text" placeholder="search">
+    </div>
     <div class="row">
         <div class="{{changeView}}" *ngFor="let item of list">
             <div class="{{listActive}}">
