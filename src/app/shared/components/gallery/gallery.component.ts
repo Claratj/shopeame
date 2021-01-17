@@ -45,4 +45,15 @@ export class GalleryComponent implements OnInit {
     this.ratingBuy = 'justify-content-between';
   }
 
+  editProduct(item) {
+    let productGestion = {
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      description: item.description,
+      stars: item.stars,
+      image: item.image
+    }
+    
+  }
 }
