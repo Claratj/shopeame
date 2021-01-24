@@ -1,15 +1,24 @@
 .footer{
     background-color: var(--color-grey);
+    height: 280px;
+    min-width: 320px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-white);
+    line-height: 143%;
 
-    &__text{
-        color: var(--color-white);
-        text-align: center;
-        padding-bottom: 3rem;
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        margin: 50px 0 37px 0;
     }
 
     &__container{
         display: flex;
         justify-content: center;
+        padding-top: 1rem;
         
         a {
            color: var(--color-white);
@@ -26,5 +35,8 @@
             width: 8rem;
             border-right: solid 1px var(--color-white);
         }
+    }
+    &__copy {
+        margin-top: 3rem;
     }
 }
