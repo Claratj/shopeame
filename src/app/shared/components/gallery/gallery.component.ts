@@ -20,7 +20,6 @@ export class GalleryComponent implements OnInit {
 
   @Input() list: any;
 
-  products: any;
   clearProd: any;
   search: any;
 
@@ -28,9 +27,16 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.getProducts();
     this.gridView();
     // this.listView();
 
+  }
+  getProducts() {
+    this.productsService.getProducts().subscribe(products => {
+      this.list = products;
+      this.clearProd = products;
+    });
   }
 
   gridView() {
@@ -65,8 +71,10 @@ export class GalleryComponent implements OnInit {
   }
 
   toSearch(word: any) {
-    this.products = this.clearProd;
-    this.products = this.products.filter((product: { name: string }) => product.name.toLowerCase().includes(word.toLowerCase()));
+    console.log(word);
+    console.log(this.list);
+    this.list = this.clearProd;
+    this.list = this.list.filter((product: { name: string }) => product.name.toLowerCase().includes(word.toLowerCase()));
   }
 
 
