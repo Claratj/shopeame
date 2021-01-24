@@ -5,9 +5,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { GestionPageComponent } from './pages/gestion-page/gestion-page.component';
 
 const routes: Routes = [
-  { path: 'gestion', component: GestionPageComponent },
-  { path: 'home', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
   { path: 'products', component: ProductsPageComponent },
+  { path: 'gestion', component: GestionPageComponent },
 ];
 
 @NgModule({
