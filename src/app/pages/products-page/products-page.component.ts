@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products-page.component.scss']
 })
 export class ProductsPageComponent implements OnInit {
-  
-  products:any ;
+
+  products: any;
 
   constructor(private productsService: ProductsService) { }
 
@@ -22,8 +22,10 @@ export class ProductsPageComponent implements OnInit {
     });
   }
 
-    // printStars(){
-    //   console.log(this.products.stars);
-      
-    // }
+
+
+  // printStars(){
+  //   console.log(this.products.stars);
+
+  // }
 }

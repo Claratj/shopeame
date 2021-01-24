@@ -10,15 +10,19 @@ export class GalleryComponent implements OnInit {
 
   changeView: string;
 
-  figureChange : string;
+  figureChange: string;
 
-  ratingBuy :string;
+  ratingBuy: string;
 
   info: string;
 
   listActive: string;
 
-  @Input() list:any;
+  @Input() list: any;
+
+  products: any;
+  clearProd: any;
+  search: any;
 
   constructor(private productsService: ProductsService) { }
 
@@ -26,10 +30,10 @@ export class GalleryComponent implements OnInit {
 
     this.gridView();
     // this.listView();
-    
+
   }
-  
-  gridView(){
+
+  gridView() {
     this.changeView = 'col-12 col-sm-6 col-md-4 col-lg-3 card';
     this.figureChange = 'p-gallery__figure-grid';
     this.ratingBuy = 'justify-content-around ';
@@ -46,7 +50,7 @@ export class GalleryComponent implements OnInit {
     this.ratingBuy = 'justify-content-between';
   }
 
-  editProduct(item) {
+  editProduct(item: { id: any; name: any; price: any; description: any; stars: any; image: any; }) {
     let productGestion = {
       id: item.id,
       name: item.name,
@@ -59,4 +63,11 @@ export class GalleryComponent implements OnInit {
 
 
   }
+
+  toSearch(word: any) {
+    this.products = this.clearProd;
+    this.products = this.products.filter((product: { name: string }) => product.name.toLowerCase().includes(word.toLowerCase()));
+  }
+
+
 }

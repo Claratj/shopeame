@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="d-flex justify-content-end">
-        <input type="text" placeholder="search">
+        <input type="text" [ngModel]="search" (ngModelChange)=toSearch($event) placeholder="search">
     </div>
     <div class="row">
         <div class="{{changeView}}" *ngFor="let item of list">
