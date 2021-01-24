@@ -2,17 +2,17 @@
     display:flex;
     justify-content: center;
     height: 7rem;
-    background-color: #ffc970;
+    background-color: var(--color-orange);
 
     &__div{
-        color: #787885;
+        color: var(--color-grey-item);
 
         a{
             text-decoration:none;
             display:flex;
             flex-direction: column;
             align-items: center;
-            color: #444444;
+            color: var(--color-grey-logo);
             border-radius: 10%; 
             padding: 2%;
             width: 4.5rem;
@@ -20,7 +20,7 @@
         }
         a:hover{
             
-            background-color: #fff;
+            background-color:var(--color-white);
             img{
                 font-size: 10px;
             }

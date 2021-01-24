@@ -1,8 +1,8 @@
 .footer{
-    background-color: #333333;
+    background-color: var(--color-grey);
 
     &__text{
-        color:#fff;
+        color: var(--color-white);
         text-align: center;
         padding-bottom: 3rem;
     }
@@ -12,19 +12,19 @@
         justify-content: center;
         
         a {
-           color: #fff;
+           color: var(--color-white);
            width: 8rem;
            text-align: center;
            text-decoration: none;
         }
         .margin{
             width: 8rem;
-            border-left: solid 1px white;
-            border-right: solid 1px white;
+            border-left: solid 1px var(--color-white);
+            border-right: solid 1px var(--color-white);
         }
         .marginIns{
             width: 8rem;
-            border-right: solid 1px white;
+            border-right: solid 1px var(--color-white);
         }
     }
 }
