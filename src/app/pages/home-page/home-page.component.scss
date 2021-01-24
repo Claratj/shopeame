@@ -1,0 +1,29 @@
+body{
+    background-color:#cccccc;
+    padding-top: 4%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 6%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2%;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+article {
+    margin-bottom: 1.5rem;
+    
+    & h4{
+        margin-bottom: 1.5rem;
+    }
+}

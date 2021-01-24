@@ -10,7 +10,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { MenuComponent } from './core/menu/menu.component';
 import { GestionPageComponent } from './pages/gestion-page/gestion-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+// import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { CommonModule } from '@angular/common';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    CommonModule,
+    // CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

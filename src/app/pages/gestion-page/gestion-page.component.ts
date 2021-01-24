@@ -23,19 +23,12 @@ export class GestionPageComponent implements OnInit {
     console.log(this.edit)
 
     this.gestionForm = this.formBuilder.group({
-      nombre: ['', [Validators.required, Validators.minLength(5)]],
-      precio: ['', [Validators.required, Validators.minLength(1)]],
-      descripcion: ['', [Validators.required, Validators.maxLength(35)]],
-      rutaImagen: ['', [Validators.required]],
-      valoracion: ['']
+      name: ['', [Validators.required, Validators.minLength(5)]],
+      price: ['', [Validators.required, Validators.minLength(1)]],
+      description: ['', [Validators.required, Validators.maxLength(35)]],
+      image: ['', [Validators.required]],
+      stars: ['']
     });
-
-    /*Estas funciones nos mostrarian por consola los cambios
-    en los inputs*/
-
-    this.gestionForm.statusChanges.subscribe((changes) => {
-      console.log(changes)
-    })
 
     this.gestionForm.valueChanges.subscribe((changes) => {
       //Asi añadimos al objeto vacio de newProduct los valores del formulario
@@ -45,16 +38,19 @@ export class GestionPageComponent implements OnInit {
 
   }
 
-  submitGestionForm() {
-    this.submitted = true;
-    console.log(this.gestionForm.value);
-    console.log(this.gestionForm);
-  }
-
+  //Funcion para añadir ptos NUEVOS al json
   addToProducts() {
-    this.newProduct.push();
+    const newProduct = { ...this.gestionForm.value };
+    this.productsService.postProduct(newProduct).subscribe();
   }
 
+  //funcion para mostrar un alert cuando se añade/edita un pto
+  buttonMessage(event) {
+    alert('Producto añadido');
+  }
 
 }
+
+
+
 

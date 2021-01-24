@@ -1,0 +1,57 @@
+.main-container-gestion {
+    max-width: 1200px;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 2.5rem 3.75rem;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .div-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5rem;
+    margin-bottom: 4rem;
+    border-right: solid 2px var(--color-orange-dark);
+  }
+  
+  input {
+    width: 70%;
+    margin: 1rem;
+  }
+  
+  label {
+    margin-left: 1.1rem;
+  }
+  
+  .preview-card {
+    margin: 7rem auto 0;
+    width: 40%;
+    height: 30rem;
+    padding: 1rem;
+    // text-align: center;
+  
+    &_fig {
+      height: 20.375rem;
+      width: 20.5rem;
+  
+      &_img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    &_text {
+      font-size: 1rem;
+    }
+  }
+  

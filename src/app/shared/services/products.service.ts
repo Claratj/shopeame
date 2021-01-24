@@ -6,22 +6,27 @@ import { Injectable } from '@angular/core';
 })
 export class ProductsService {
 
+
   itemData: any;
 
   constructor(private http: HttpClient) { }
 
-  getProducts(){
+  getProducts() {
     return this.http.get('http://localhost:3000/products')
   }
 
-  editItem(productGestion){
-    this.itemData = productGestion; 
+  editItem(productGestion) {
+    this.itemData = productGestion;
   }
 
-  getItem(){
+  getItem() {
     let tempVar = this.itemData;
     return tempVar
   }
 
+  //funcion para introducir ptos nuevos al json
+  postProduct(newProduct: any) {
+    return this.http.post('http://localhost:3000/products', newProduct)
+  }
 
 }

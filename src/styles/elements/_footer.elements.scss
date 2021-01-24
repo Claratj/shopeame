@@ -1,0 +1,30 @@
+footer{
+    background-color: #333333;
+
+    &__text{
+        color:#fff;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        
+        a {
+           color: #fff;
+           width: 8rem;
+           text-align: center;
+           text-decoration: none;
+        }
+        .margin{
+            width: 8rem;
+            border-left: solid 1px white;
+            border-right: solid 1px white;
+        }
+        .marginIns{
+            width: 8rem;
+            border-right: solid 1px white;
+        }
+    }
+}
