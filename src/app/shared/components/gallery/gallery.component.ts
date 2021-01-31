@@ -8,6 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  public isActiveList: boolean = false;
+  public isActiveGrid: boolean = true;
+
   changeView: string;
 
   figureChange: string;
@@ -32,10 +35,11 @@ export class GalleryComponent implements OnInit {
     // this.listView();
 
   }
+
+  // cambiando a item
   getProducts() {
     this.productsService.getProducts().subscribe(products => {
       this.list = products;
-      this.clearProd = products;
     });
   }
 
@@ -43,8 +47,10 @@ export class GalleryComponent implements OnInit {
     this.changeView = 'col-12 col-sm-6 col-md-4 col-lg-3 card';
     this.figureChange = 'p-gallery__figure-grid';
     this.ratingBuy = 'justify-content-around ';
-    this.listActive = '';
+    this.isActiveList = false;
+    this.isActiveGrid = true;
     this.info = '';
+
 
   }
 
@@ -54,6 +60,9 @@ export class GalleryComponent implements OnInit {
     this.figureChange = 'p-gallery__figure-list align-items-center';
     this.info = 'flex-fill'
     this.ratingBuy = 'justify-content-between';
+    this.isActiveList = true;
+    this.isActiveGrid = false;
+
   }
 
   editProduct(item: { id: any; name: any; price: any; description: any; stars: any; image: any; }) {

@@ -1,9 +1,13 @@
 <div class="main-container">
     <div class="d-flex justify-content-between align-items-center">
         <h2>Listado de Productos ({{list.length}})</h2>
-        <div class="">
-            <button class="btn-display" (click)="listView()"><img src=" ../../../../assets/img/list.svg"></button>
-            <button class="btn-display" (click)="gridView()"><img src="../../../../assets/img/grid.svg"></button>
+        <div class="display">
+            <div class="btn-display" [class.active]="isActiveList" (click)="listView()"><img
+                    src=" ../../../../assets/img/list.svg">
+            </div>
+            <div class="btn-display" [class.active]="isActiveGrid" (click)="gridView()"><img
+                    src="../../../../assets/img/grid.svg">
+            </div>
         </div>
     </div>
     <div class="d-flex justify-content-end">
@@ -12,53 +16,9 @@
     <div class="row">
         <div class="{{changeView}}" *ngFor="let item of list">
             <div class="{{listActive}}">
-                <figure class="{{figureChange}}">
-                    <img class="p-gallery__img" src="{{item.image}}">
-                </figure>
-                <div class="{{info}}">
-                    <h2 *ngIf="figureChange =='p-gallery__figure-list align-items-center'">{{item.name}}</h2>
-                    <figcaption>{{item.description}}</figcaption>
-                    <h2>{{item.price}}€</h2>
-                    <div class="d-flex align-items-center {{ratingBuy}}">
-                        <div class="d-flex justify-content-center">
-                            <div *ngIf="item.stars === 5">
-                                <i class='bx bxs-star' style='color:#ffce20'></i>
-                            </div>
-                            <div *ngIf="item.stars > 4">
-                                <i class='bx bxs-star' style='color:#ffce20'></i>
-                            </div>
-                            <div *ngIf="item.stars === 4">
-                                <i class='bx bxs-star' style='color:#ffce20'></i>
-                            </div>
-                            <div *ngIf="item.stars > 3">
-                                <i class='bx bxs-star' style='color:#ffce20'></i>
-                            </div>
-                            <div *ngIf="item.stars === 3">
-                                <i class='bx bxs-star' style='color:#ffce20'></i>
-                            </div>
-                            <div *ngIf="item.stars > 2">
-                                <i class='bx bxs-star' style='color:#ffce20'></i>
-                            </div>
-                            <div *ngIf="item.stars === 2">
-                                <i class='bx bxs-star' style='color:#ffce20'></i>
-                            </div>
-                            <div *ngIf="item.stars > 1">
-                                <i class='bx bxs-star' style='color:#ffce20'></i>
-                            </div>
-                            <div *ngIf="item.stars === 1">
-                                <i class='bx bxs-star' style='color:#ffce20'></i>
-                            </div>
-                            <div *ngIf="item.stars % 1 !==0 ">
-                                <i class='bx bxs-star-half' style='color:#ffce20'></i>
-                            </div>
-                        </div>
-                        <p>{{item.stars}}</p>
-                        <button class="btn-gallery" (click)="editProduct(item)" routerLink="/gestion">Editar</button>
-                    </div>
-                </div>
-
+                <app-item [item]="item"></app-item>
+                <button class="btn-gallery" (click)="editProduct(item)" routerLink="/gestion">Editar</button>
             </div>
-
         </div>
     </div>
 </div>

@@ -13,6 +13,7 @@ export class GestionPageComponent implements OnInit {
   submitted = false;
   newProduct: any = {};
   edit: any;
+  productGestion: any;
 
   constructor(private formBuilder: FormBuilder, private productsService: ProductsService) { }
 
@@ -20,7 +21,6 @@ export class GestionPageComponent implements OnInit {
   ngOnInit(): void {
 
     this.edit = this.productsService.getItem();
-    console.log(this.edit)
 
     this.gestionForm = this.formBuilder.group({
       name: ['', [Validators.required, Validators.minLength(5)]],
@@ -30,10 +30,10 @@ export class GestionPageComponent implements OnInit {
       stars: ['']
     });
 
-    this.gestionForm.valueChanges.subscribe((changes) => {
+    this.gestionForm.valueChanges.subscribe((changes: any) => {
       //Asi añadimos al objeto vacio de newProduct los valores del formulario
       this.newProduct = changes;
-      console.log(this.newProduct);
+      // console.log(this.newProduct);
     })
 
   }
@@ -48,6 +48,8 @@ export class GestionPageComponent implements OnInit {
   buttonMessage(event) {
     alert('Producto añadido');
   }
+
+
 
 }
 
