@@ -7,11 +7,10 @@ import { Injectable } from '@angular/core';
 export class ProductsService {
 
 
-  itemData: any;
 
   constructor(private http: HttpClient) { }
 
-  ProductsService = {
+  itemData = {
     id: '',
     name: 'Nombre',
     price: 'Precio',
@@ -27,13 +26,8 @@ export class ProductsService {
   }
 
   //envío a gestion para editar
-  editItem(productGestion) {
-    this.itemData = productGestion;
-  }
-
-  getItem() {
-    let tempVar = this.itemData;
-    return tempVar
+  editItem(item) {
+    this.itemData = item;
   }
 
   //funcion para introducir ptos nuevos al json

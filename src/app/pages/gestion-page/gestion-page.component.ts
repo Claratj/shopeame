@@ -11,7 +11,7 @@ export class GestionPageComponent implements OnInit {
 
   gestionForm: any = [];
   submitted = false;
-  newProduct: any = {};
+  newProduct = this.productsService.itemData;
   edit: any;
   productGestion: any;
 
@@ -20,7 +20,7 @@ export class GestionPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.edit = this.productsService.getItem();
+    console.log(this.newProduct);
 
     this.gestionForm = this.formBuilder.group({
       name: ['', [Validators.required, Validators.minLength(5)]],
