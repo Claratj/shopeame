@@ -12,6 +12,7 @@ export class GestionPageComponent implements OnInit {
   gestionForm: any = [];
   submitted = false;
   newProduct = this.productsService.itemData;
+  idProd = this.productsService.itemData.id;
   edit: any;
   productGestion: any;
 
@@ -20,7 +21,7 @@ export class GestionPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log(this.newProduct);
+    console.log(this.newProduct.id);
 
     this.gestionForm = this.formBuilder.group({
       name: ['', [Validators.required, Validators.minLength(5)]],
@@ -38,9 +39,10 @@ export class GestionPageComponent implements OnInit {
   }
 
   //Funcion para añadir ptos NUEVOS al json
-  addToProducts() {
-    if (this.newProduct.id) {
-      this.productsService.putProduct(this.newProduct, this.newProduct.id).subscribe();
+  addEditProducts() {
+    if (this.idProd !== '') {
+      console.log('he llegado aquí');
+      this.productsService.putProduct(this.newProduct, this.idProd).subscribe();
     } else {
       const newProduct = { ...this.gestionForm.value };
       this.productsService.postProduct(newProduct).subscribe();

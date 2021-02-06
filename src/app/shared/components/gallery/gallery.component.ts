@@ -59,7 +59,7 @@ export class GalleryComponent implements OnInit {
   listView() {
     this.changeView = 'col-12';
     this.listActive = 'd-sm-flex';
-    this.figureChange = 'p-gallery__figure-list align-items-center';
+    this.figureChange = 'p-gallery__figure-list-list align-items-center';
     this.info = 'flex-fill'
     this.ratingBuy = 'justify-content-between';
     this.isActiveList = true;

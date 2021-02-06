@@ -2,7 +2,7 @@
     <div class="div-form">
         <h2>Creación/edición de productos</h2>
 
-        <form class="form" [formGroup]="gestionForm" (ngSubmit)="addToProducts()">
+        <form class="form" [formGroup]="gestionForm" (ngSubmit)="addEditProducts()">
             <label for="name">Nombre del producto:</label>
             <input type="text" id="name" placeholder="{{ newProduct.name }}" formControlName="name" />
             <!-- Required -->

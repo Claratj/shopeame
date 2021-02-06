@@ -36,7 +36,8 @@ export class ProductsService {
   }
 
   //funcion para sobreescribir productos del json
-  putProduct(editedProduct: any, idProd: string) {
+  putProduct(editedProduct, idProd) {
+    console.log('estoy en el service put')
     return this.http.put('http://localhost:3000/products/' + idProd, editedProduct);
   }
 

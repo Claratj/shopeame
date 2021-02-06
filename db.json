@@ -57,12 +57,12 @@
       "image": "https://i.ibb.co/MZSrV6q/maceta.jpg"
     },
     {
-      "id": 8,
       "name": "Gato Persa",
-      "price": 100,
-      "description": "No sé si es legal vender animales online...",
-      "stars": 3,
-      "image": "https://i.ibb.co/1zPPBjx/gato.jpg"
+      "price": "0",
+      "description": "Adopta siempre",
+      "image": "https://ichef.bbci.co.uk/news/640/cpsprodpb/150EA/production/_107005268_gettyimages-611696954.jpg",
+      "stars": "5",
+      "id": 8
     }
   ]
 }
