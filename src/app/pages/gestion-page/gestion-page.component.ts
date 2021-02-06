@@ -13,8 +13,7 @@ export class GestionPageComponent implements OnInit {
   submitted = false;
   newProduct = this.productsService.itemData;
   idProd = this.productsService.itemData.id;
-  edit: any;
-  productGestion: any;
+
 
   constructor(private formBuilder: FormBuilder, private productsService: ProductsService) { }
 
@@ -51,6 +50,11 @@ export class GestionPageComponent implements OnInit {
   //funcion para mostrar un alert cuando se añade/edita un pto
   buttonMessage(event) {
     alert('Producto añadido');
+  }
+
+  removeProduct() {
+    this.productsService.deleteProduct(this.newProduct.id).subscribe();
+    alert('Producto eliminado');
   }
 
 }
