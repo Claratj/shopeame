@@ -7,7 +7,6 @@ import { Injectable } from '@angular/core';
 export class ProductsService {
 
 
-
   constructor(private http: HttpClient) { }
 
   itemData = {
@@ -37,7 +36,6 @@ export class ProductsService {
 
   //funcion para sobreescribir productos del json
   putProduct(editedProduct, idProd) {
-    console.log('estoy en el service put')
     return this.http.put('http://localhost:3000/products/' + idProd, editedProduct);
   }
 

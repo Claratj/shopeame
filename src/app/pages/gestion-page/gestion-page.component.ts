@@ -21,14 +21,14 @@ export class GestionPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log(this.newProduct.id);
+    console.log(this.newProduct.name);
 
     this.gestionForm = this.formBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(5)]],
-      price: ['', [Validators.required, Validators.minLength(1)]],
-      description: ['', [Validators.required, Validators.maxLength(35)]],
-      image: ['', [Validators.required]],
-      stars: ['']
+      name: [this.newProduct.name, [Validators.required, Validators.minLength(5)]],
+      price: [this.newProduct.price, [Validators.required, Validators.minLength(1)]],
+      description: [this.newProduct.description, [Validators.required, Validators.maxLength(35)]],
+      image: [this.newProduct.image, [Validators.required]],
+      stars: [this.newProduct.stars]
     });
 
     this.gestionForm.valueChanges.subscribe((changes: any) => {
@@ -41,7 +41,6 @@ export class GestionPageComponent implements OnInit {
   //Funcion para añadir ptos NUEVOS al json
   addEditProducts() {
     if (this.idProd !== '') {
-      console.log('he llegado aquí');
       this.productsService.putProduct(this.newProduct, this.idProd).subscribe();
     } else {
       const newProduct = { ...this.gestionForm.value };
