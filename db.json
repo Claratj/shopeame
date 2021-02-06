@@ -9,14 +9,6 @@
       "image": "https://i.ibb.co/4j85tBM/shoes.jpg"
     },
     {
-      "id": 2,
-      "name": "Máquina de escribir",
-      "price": 109.99,
-      "description": "Bonita máquina de escribir antigua.",
-      "stars": 4.2,
-      "image": "https://i.ibb.co/84zfbz0/maquina.jpg"
-    },
-    {
       "id": 3,
       "name": "Bolígrafos de colores",
       "price": 1.99,
@@ -49,12 +41,28 @@
       "image": "https://i.ibb.co/mhgHWnf/jarabe.jpg"
     },
     {
-      "name": "Maceta de diseño2",
-      "price": "12",
-      "description": "Maceta de diseño a precio económico.",
-      "image": "https://i.ibb.co/MZSrV6q/maceta.jpg",
-      "stars": 5,
-      "id": 7
+      "name": "Pamela",
+      "price": "29",
+      "description": "Descripción",
+      "image": "https://cdn.thecolvinco.com/photos_cache_thumb/pamela/pamela-c86263db-de00-4d85-af1a-65901bed97ef.jpg",
+      "stars": "4",
+      "id": 8
+    },
+    {
+      "name": "Nombre",
+      "price": "Precio",
+      "description": "Descripción",
+      "image": "https://www.fml.com.mx/wp-content/uploads/2016/04/Race-Registration-Image-Not-Found.png",
+      "stars": 1,
+      "id": 9
+    },
+    {
+      "name": "Nombre",
+      "price": "Precio",
+      "description": "Descripción",
+      "image": "https://www.fml.com.mx/wp-content/uploads/2016/04/Race-Registration-Image-Not-Found.png",
+      "stars": 1,
+      "id": 10
     }
   ]
 }

@@ -20,6 +20,7 @@ export class GestionPageComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.productsService.clearProduct();
 
     this.gestionForm = this.formBuilder.group({
       name: [this.newProduct.name, [Validators.required, Validators.minLength(5)]],

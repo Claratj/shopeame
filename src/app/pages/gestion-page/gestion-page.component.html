@@ -37,12 +37,14 @@
 
             <label for="stars">Valoración:</label>
             <input type="text" id="stars" placeholder="{{ newProduct.stars }}" formControlName="stars" />
-
-            <div>
-                <input class="btn-form" type="submit" value="Guardar" (click)="buttonMessage($event)" />
-            </div>
-            <div>
-                <input class="btn-form" type="submit" value="Borrar" (click)="removeProduct()" routerLink="/products" />
+            <div class="d-flex justify-content-start">
+                <div>
+                    <input class="btn-form" type="submit" value="Guardar" (click)="buttonMessage($event)" />
+                </div>
+                <div *ngIf="idProd !== ''">
+                    <input class="btn-form btn-form__delete" type="submit" value="Borrar" (click)="removeProduct()"
+                        routerLink="/products" />
+                </div>
             </div>
         </form>
     </div>
