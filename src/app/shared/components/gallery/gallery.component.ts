@@ -47,7 +47,7 @@ export class GalleryComponent implements OnInit {
 
   gridView() {
     this.changeView = 'col-12 col-sm-6 col-md-4 col-lg-3 card justify-content-end';
-    this.figureChange = 'p-gallery__figure-grid';
+    this.figureChange = 'p-gallery__figure-grid__img';
     this.ratingBuy = 'justify-content-around ';
     this.isActiveList = false;
     this.isActiveGrid = true;

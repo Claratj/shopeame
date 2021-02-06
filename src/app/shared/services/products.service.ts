@@ -16,7 +16,7 @@ export class ProductsService {
     price: 'Precio',
     description: 'Descripción',
     stars: 1,
-    image: 'https://media.istockphoto.com/vectors/no-image-available-sign-vector-id922962354?k=6&m=922962354&s=612x612&w=0&h=_KKNzEwxMkutv-DtQ4f54yA5nc39Ojb_KPvoV__aHyU=',
+    image: 'https://www.fml.com.mx/wp-content/uploads/2016/04/Race-Registration-Image-Not-Found.png',
   };
 
 
@@ -35,6 +35,7 @@ export class ProductsService {
     return this.http.post('http://localhost:3000/products', newProduct)
   }
 
+  //funcion para sobreescribir productos del json
   putProduct(editedProduct: any, idProd: string) {
     return this.http.put('http://localhost:3000/products/' + idProd, editedProduct);
   }

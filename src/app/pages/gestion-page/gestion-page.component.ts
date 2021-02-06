@@ -33,23 +33,24 @@ export class GestionPageComponent implements OnInit {
     this.gestionForm.valueChanges.subscribe((changes: any) => {
       //Asi añadimos al objeto vacio de newProduct los valores del formulario
       this.newProduct = changes;
-      // console.log(this.newProduct);
     })
 
   }
 
   //Funcion para añadir ptos NUEVOS al json
   addToProducts() {
-    const newProduct = { ...this.gestionForm.value };
-    this.productsService.postProduct(newProduct).subscribe();
+    if (this.newProduct.id) {
+      this.productsService.putProduct(this.newProduct, this.newProduct.id).subscribe();
+    } else {
+      const newProduct = { ...this.gestionForm.value };
+      this.productsService.postProduct(newProduct).subscribe();
+    }
   }
 
   //funcion para mostrar un alert cuando se añade/edita un pto
   buttonMessage(event) {
     alert('Producto añadido');
   }
-
-
 
 }
 
