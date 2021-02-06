@@ -49,12 +49,20 @@
       "image": "https://i.ibb.co/mhgHWnf/jarabe.jpg"
     },
     {
-      "name": "Maceta de diseño2",
-      "price": "12",
+      "id": 7,
+      "name": "Maceta de diseño",
+      "price": 9.99,
       "description": "Maceta de diseño a precio económico.",
-      "image": "https://i.ibb.co/MZSrV6q/maceta.jpg",
       "stars": 5,
-      "id": 7
+      "image": "https://i.ibb.co/MZSrV6q/maceta.jpg"
+    },
+    {
+      "name": "Gato Persa",
+      "price": "0",
+      "description": "Adopta siempre",
+      "image": "https://ichef.bbci.co.uk/news/640/cpsprodpb/150EA/production/_107005268_gettyimages-611696954.jpg",
+      "stars": "5",
+      "id": 8
     }
   ]
 }

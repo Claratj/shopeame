@@ -18,6 +18,18 @@ export class ProductsService {
     image: 'https://www.fml.com.mx/wp-content/uploads/2016/04/Race-Registration-Image-Not-Found.png',
   };
 
+  clearProduct() {
+    this.itemData = {
+      id: '',
+      name: 'Nombre',
+      price: 'Precio',
+      description: 'Descripción',
+      stars: 1,
+      image: 'https://www.fml.com.mx/wp-content/uploads/2016/04/Race-Registration-Image-Not-Found.png',
+    };
+
+  }
+
 
   //petición a la API
   getProducts() {

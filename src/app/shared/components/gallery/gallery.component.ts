@@ -52,8 +52,6 @@ export class GalleryComponent implements OnInit {
     this.isActiveList = false;
     this.isActiveGrid = true;
     this.info = '';
-
-
   }
 
   listView() {

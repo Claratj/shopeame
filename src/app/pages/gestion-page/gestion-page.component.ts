@@ -20,7 +20,6 @@ export class GestionPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log(this.newProduct.name);
 
     this.gestionForm = this.formBuilder.group({
       name: [this.newProduct.name, [Validators.required, Validators.minLength(5)]],
@@ -54,6 +53,7 @@ export class GestionPageComponent implements OnInit {
 
   removeProduct() {
     this.productsService.deleteProduct(this.newProduct.id).subscribe();
+    this.productsService.clearProduct();
     alert('Producto eliminado');
   }
 
