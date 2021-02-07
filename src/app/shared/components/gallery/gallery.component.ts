@@ -11,6 +11,7 @@ export class GalleryComponent implements OnInit {
   public isActiveList: boolean = false;
   public isActiveGrid: boolean = true;
 
+
   changeView: string;
 
   figureChange: string;

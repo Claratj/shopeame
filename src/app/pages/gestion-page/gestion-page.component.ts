@@ -14,7 +14,6 @@ export class GestionPageComponent implements OnInit {
   newProduct = this.productsService.itemData;
   idProd = this.productsService.itemData.id;
 
-
   constructor(private formBuilder: FormBuilder, private productsService: ProductsService) { }
 
 
@@ -36,6 +35,7 @@ export class GestionPageComponent implements OnInit {
     })
 
   }
+
 
   //Funcion para añadir ptos NUEVOS al json
   addEditProducts() {

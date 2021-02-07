@@ -1,23 +1,22 @@
 .p-gallery {
 	&__figure-grid {
 		margin: 16px 0;
-		height: 14rem;
-		width: 14.125rem;
+		height: 224px;
+		width: 226px;
 		cursor: pointer;
 	}
 		&__img{
-			width: 100%;
 			height: 165.5px;
 		}
 
 	&__figure-list {
 		height: 20.375rem;
-		width: 20.5rem;
 	}
 		&__img-list {
 			// width: 20.5rem;
 			// height: ;
 		}
 }
+
 
 

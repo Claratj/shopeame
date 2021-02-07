@@ -36,3 +36,4 @@ import { ItemComponent } from './shared/components/item/item.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

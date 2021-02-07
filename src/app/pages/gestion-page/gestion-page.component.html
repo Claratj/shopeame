@@ -1,8 +1,8 @@
-<div class="main-container-gestion">
-    <div class="div-form">
+<div class="main-container d-sm-flex">
+    <div class="div-form col-8">
         <h2>Creación/edición de productos</h2>
 
-        <form class="form" [formGroup]="gestionForm" (ngSubmit)="addEditProducts()">
+        <form class="form-group" [formGroup]="gestionForm" (ngSubmit)="addEditProducts()">
             <label for="name">Nombre del producto:</label>
             <input type="text" id="name" placeholder="{{ newProduct.name }}" formControlName="name" />
             <!-- Required -->
@@ -37,7 +37,7 @@
 
             <label for="stars">Valoración:</label>
             <input type="text" id="stars" placeholder="{{ newProduct.stars }}" formControlName="stars" />
-            <div class="d-flex justify-content-start">
+            <div class="d-flex">
                 <div>
                     <input class="btn-form" type="submit" value="Guardar" (click)="buttonMessage($event)" />
                 </div>
