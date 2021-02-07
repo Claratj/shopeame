@@ -48,38 +48,27 @@ export class GalleryComponent implements OnInit {
 
   gridView() {
     this.changeView = 'col-12 col-sm-6 col-md-4 col-lg-3 card justify-content-end';
-    this.figureChange = 'p-gallery__figure-grid__img';
-    this.ratingBuy = 'justify-content-around ';
+    // this.figureChange = 'p-gallery__figure-grid__img'; 
+    // this.ratingBuy = 'justify-content-around ';
     this.isActiveList = false;
     this.isActiveGrid = true;
-    this.info = '';
+    // this.info = '';
+
   }
 
   listView() {
     this.changeView = 'col-12';
     this.listActive = 'd-sm-flex';
-    this.figureChange = 'p-gallery__figure-list-list align-items-center';
-    this.info = 'flex-fill'
-    this.ratingBuy = 'justify-content-between';
+    // this.figureChange = 'p-gallery__figure-list-list align-items-center';
+    // this.info = 'flex-fill'
+    // this.ratingBuy = 'justify-content-between';
     this.isActiveList = true;
     this.isActiveGrid = false;
 
   }
 
 
-  editProduct(item) {
-    // let productGestion = {
-    //   id: item.id,
-    //   name: item.name,
-    //   price: item.price,
-    //   description: item.description,
-    //   stars: item.stars,
-    //   image: item.image
-    // }
-    // this.productsService.editItem(productGestion);
-    this.productsService.editItem(item);
 
-  }
 
   //barra de búsqueda-filtrado de la información
   toSearch(word: any) {

@@ -9,13 +9,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ItemComponent implements OnInit {
 
-  figureChange: string;
+  // figureChange: string;
 
-  ratingBuy: string;
+  // ratingBuy: string;
 
-  info: string;
+  // info: string;
 
-  listActive: string;
+  // description: string;
+
+  // listActive: string;
 
   @Input() list: any;
 
@@ -36,6 +38,12 @@ export class ItemComponent implements OnInit {
       this.list = products;
       this.clearProd = products;
     });
+  }
+
+  editProduct(item) {
+
+    this.productsService.editItem(item);
+
   }
 
 
