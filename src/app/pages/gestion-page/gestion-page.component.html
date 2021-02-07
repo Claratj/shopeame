@@ -42,7 +42,7 @@
             <input class="input-form" type="text" id="stars" placeholder="{{ newProduct.stars }}"
                 formControlName="stars" />
             <div class="d-flex">
-                <div>
+                <div class="btn-gestion-container">
                     <input class="btn-form" type="submit" value="Guardar" (click)="buttonMessage($event)" />
                 </div>
                 <div *ngIf="idProd !== ''">
