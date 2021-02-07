@@ -41,5 +41,8 @@
             </div>
             <p>{{item.stars}}</p>
         </div>
+        <div>
+            <button class="btn-gallery" *ngIf="item" (click)="editProduct(item)" routerLink="/gestion">Editar</button>
+        </div>
     </div>
 </div>

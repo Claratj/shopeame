@@ -17,7 +17,6 @@
         <div class="{{changeView}}" *ngFor="let item of list">
             <div class="{{listActive}} d-flex flex-column">
                 <app-item [item]="item"></app-item>
-                <button class="btn-gallery" (click)="editProduct(item)" routerLink="/gestion">Editar</button>
             </div>
         </div>
     </div>
