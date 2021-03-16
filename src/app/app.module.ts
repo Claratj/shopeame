@@ -12,6 +12,7 @@ import { GestionPageComponent } from './pages/gestion-page/gestion-page.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ItemComponent } from './shared/components/item/item.component';
 import { ItemListComponent } from './shared/components/item-list/item-list.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -32,6 +33,7 @@ import { ItemListComponent } from './shared/components/item-list/item-list.compo
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    NgbModule,
     // CommonModule,
   ],
   providers: [],
