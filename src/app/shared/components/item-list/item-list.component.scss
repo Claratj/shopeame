@@ -1,15 +1,19 @@
-.list {
+table {
+    text-align: center;
     width: 100%;
-    margin: 3rem auto;
-    padding: 1rem 6rem 3rem;
+    padding: 3rem 0 1.5rem 0;
+}
 
-    &_item {
-        text-align:center;
+.list {
+
+
         
-        &_img {
-            width: 30%;
-        }
+    &_img {
+        max-width: 150px;
+        max-height: 150px;
+        object-fit: contain;
     }
+
     // td:nth-child(4) {
     //     text-align: center;
     //     margin-left: 2rem;
@@ -23,3 +27,5 @@
         margin-bottom: 0.5rem;
     }
 } 
+
+
