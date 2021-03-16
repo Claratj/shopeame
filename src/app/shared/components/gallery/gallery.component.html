@@ -18,7 +18,8 @@
     <div class="row align-items-end">
         <div class="{{changeView}}" *ngFor="let item of list">
             <div class="{{listActive}} d-flex flex-column">
-                <app-item [item]="item"></app-item>
+                <app-item *ngIf="isActiveGrid === true" [item]="item"></app-item>
+                <app-item-list class="list" *ngIf="isActiveList === true" [item]="item"></app-item-list>
             </div>
         </div>
     </div>

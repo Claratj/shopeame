@@ -11,6 +11,7 @@ import { MenuComponent } from './core/menu/menu.component';
 import { GestionPageComponent } from './pages/gestion-page/gestion-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ItemComponent } from './shared/components/item/item.component';
+import { ItemListComponent } from './shared/components/item-list/item-list.component';
 // import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ItemComponent } from './shared/components/item/item.component';
     FooterComponent,
     MenuComponent,
     GestionPageComponent,
-    ItemComponent
+    ItemComponent,
+    ItemListComponent
   ],
   imports: [
     BrowserModule,
