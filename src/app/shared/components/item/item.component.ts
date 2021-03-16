@@ -9,16 +9,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ItemComponent implements OnInit {
 
-  // figureChange: string;
-
-  // ratingBuy: string;
-
-  // info: string;
-
-  // description: string;
-
-  // listActive: string;
-
   @Input() list: any;
 
   @Input() item: any;

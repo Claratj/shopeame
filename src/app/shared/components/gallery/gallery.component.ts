@@ -31,7 +31,6 @@ export class GalleryComponent implements OnInit {
 
     this.getProducts();
     this.gridView();
-    // this.listView();
 
   }
 
@@ -45,9 +44,7 @@ export class GalleryComponent implements OnInit {
   }
 
   gridView() {
-    this.changeView = 'col-12 col-sm-6 col-md-4 col-lg-3 card justify-content-end';
-    // this.figureChange = 'p-gallery__figure-grid__img'; 
-    // this.ratingBuy = 'justify-content-around ';
+    this.changeView = 'col-12 col-sm-6 col-md-4 col-lg-3 justify-content-end';
     this.isActiveList = false;
     this.isActiveGrid = true;
     // this.info = '';
@@ -55,7 +52,6 @@ export class GalleryComponent implements OnInit {
   }
 
   listView() {
-    this.changeView = 'col-12';
     this.isActiveList = true;
     this.isActiveGrid = false;
 

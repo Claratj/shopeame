@@ -15,10 +15,8 @@
             <input type="text" [ngModel]="search" (ngModelChange)=toSearch($event) placeholder="search">
         </div>
     </div>
-    <div class="row">
-        <div class="{{changeView}}">
-            <app-item *ngIf="isActiveGrid === true" [list]="list"></app-item>
-            <app-item-list *ngIf="isActiveList === true" [list]="list"></app-item-list>
-        </div>
+    <div class="{{changeView}}" *ngFor="let item of list">
+        <app-item *ngIf="isActiveGrid === true" [item]="item"></app-item>
     </div>
+    <app-item-list *ngIf="isActiveList === true" [item]="item"></app-item-list>
 </div>
