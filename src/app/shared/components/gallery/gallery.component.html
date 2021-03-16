@@ -16,9 +16,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="{{changeView}}" *ngFor="let item of list">
-            <app-item *ngIf="isActiveGrid === true" [item]="item"></app-item>
-            <app-item-list *ngIf="isActiveList === true" [item]="item"></app-item-list>
+        <div class="{{changeView}}">
+            <app-item *ngIf="isActiveGrid === true" [list]="list"></app-item>
+            <app-item-list *ngIf="isActiveList === true" [list]="list"></app-item-list>
         </div>
     </div>
 </div>
