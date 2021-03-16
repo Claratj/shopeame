@@ -15,16 +15,14 @@
                 <th scope="row">
                     <img class="list_img" src="{{item.image}}">
                 </th>
-                <td>{{item.name}}</td>
-                <td>{{item.description}}</td>
-                <td>{{item.price}}€</td>
-                <td>{{item.stars}}<svg width="16" height="15" viewBox="0 0 12 11" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M6.00016 8.31066L9.42008 10.3359L8.51253 6.51887L11.534 3.95062L7.55518 3.61398L6.00016 0.0195312L4.44515 3.61398L0.466309 3.95062L3.48226 6.51887L2.58024 10.3359L6.00016 8.31066Z"
-                            fill="#FB8200" />
-                    </svg></td>
-                <td><button class="btn-gallery " (click)="editProduct(item)" routerLink="/gestion">Editar</button></td>
+                <td class="align-middle">{{item.name}}</td>
+                <td class="align-middle">{{item.description}}</td>
+                <td class="align-middle">{{item.price}}€</td>
+                <td class="align-middle">
+                    <app-stars [starRating]="item.stars"></app-stars>
+                </td>
+                <td class="align-middle"><button class="btn-gallery " (click)="editProduct(item)"
+                        routerLink="/gestion">Editar</button></td>
             </tr>
         </tbody>
     </table>
