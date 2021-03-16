@@ -1,21 +1,11 @@
 .p-gallery {
-	&__figure-grid {
-		margin: 16px 0;
-		height: 224px;
-		width: 226px;
-		cursor: pointer;
-	}
-		&__img{
-			height: 165.5px;
-		}
 
-	&__figure-list {
-		height: 20.375rem;
+	
+	&_img{
+		max-height: 165.5px;
+		max-width: 231px;
 	}
-		&__img-list {
-			// width: 20.5rem;
-			// height: ;
-		}
+
 }
 
 .search {
