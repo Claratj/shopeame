@@ -43,10 +43,26 @@
     {
       "name": "Pamela",
       "price": "29",
-      "description": "Todo es mejor y más verde con una plantita en casa.",
+      "description": "Descripción",
       "image": "https://cdn.thecolvinco.com/photos_cache_thumb/pamela/pamela-c86263db-de00-4d85-af1a-65901bed97ef.jpg",
       "stars": "4",
       "id": 8
+    },
+    {
+      "name": "Nombre",
+      "price": "Precio",
+      "description": "Descripción",
+      "image": "https://www.fml.com.mx/wp-content/uploads/2016/04/Race-Registration-Image-Not-Found.png",
+      "stars": 1,
+      "id": 9
+    },
+    {
+      "name": "Nombre",
+      "price": "Precio",
+      "description": "Descripción",
+      "image": "https://www.fml.com.mx/wp-content/uploads/2016/04/Race-Registration-Image-Not-Found.png",
+      "stars": 1,
+      "id": 10
     }
   ]
 }

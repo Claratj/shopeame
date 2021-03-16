@@ -14,10 +14,16 @@ article {
 	border-radius: 10px;
 	padding: 2.5rem 3.75rem;
 	margin: 5rem auto;
+
+	& h2 {
+		width: 100%;
+	}
 }
-.card {
-	height: 29.5rem;
+
+.item-card {
+	max-height: 22.75rem;
 	padding: 1rem;
+	margin: 1rem 0;
 	width: 16.125rem;
 }
 

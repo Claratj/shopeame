@@ -1,0 +1,29 @@
+<div class="list">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Imagen</th>
+                <th scope="col">Nombre</th>
+                <th scope="col-5">Descripción</th>
+                <th scope="col">Precio</th>
+                <th scope="col-3">Rating</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of list">
+                <th scope="row">
+                    <img class="list_img" src="{{item.image}}">
+                </th>
+                <td class="align-middle">{{item.name}}</td>
+                <td class="align-middle">{{item.description}}</td>
+                <td class="align-middle">{{item.price}}€</td>
+                <td class="align-middle">
+                    <app-stars [starRating]="item.stars"></app-stars>
+                </td>
+                <td class="align-middle"><button class="btn-gallery " (click)="editProduct(item)"
+                        routerLink="/gestion">Editar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

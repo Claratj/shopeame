@@ -1,6 +1,6 @@
-<div class="card">
-    <figure>
-        <img class="p-gallery__img" src="{{item.image}}">
+<div class="item-card">
+    <figure class="d-flex justify-content-center align-items-center">
+        <img class="p-gallery_img" src="{{item.image}}">
     </figure>
     <div>
         <div>
@@ -8,41 +8,7 @@
         </div>
         <h2>{{item.price}}€</h2>
         <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <div class="d-flex justify-content-center">
-                    <div *ngIf="item.stars === 5">
-                        <i class='bx bxs-star' style='color:#ffce20'></i>
-                    </div>
-                    <div *ngIf="item.stars > 4">
-                        <i class='bx bxs-star' style='color:#ffce20'></i>
-                    </div>
-                    <div *ngIf="item.stars === 4">
-                        <i class='bx bxs-star' style='color:#ffce20'></i>
-                    </div>
-                    <div *ngIf="item.stars > 3">
-                        <i class='bx bxs-star' style='color:#ffce20'></i>
-                    </div>
-                    <div *ngIf="item.stars === 3">
-                        <i class='bx bxs-star' style='color:#ffce20'></i>
-                    </div>
-                    <div *ngIf="item.stars > 2">
-                        <i class='bx bxs-star' style='color:#ffce20'></i>
-                    </div>
-                    <div *ngIf="item.stars === 2">
-                        <i class='bx bxs-star' style='color:#ffce20'></i>
-                    </div>
-                    <div *ngIf="item.stars > 1">
-                        <i class='bx bxs-star' style='color:#ffce20'></i>
-                    </div>
-                    <div *ngIf="item.stars === 1">
-                        <i class='bx bxs-star' style='color:#ffce20'></i>
-                    </div>
-                    <div *ngIf="item.stars % 1 !==0 ">
-                        <i class='bx bxs-star-half' style='color:#ffce20'></i>
-                    </div>
-                </div>
-                <p>{{item.stars}}</p>
-            </div>
+            <app-stars [starRating]="item.stars"></app-stars>
             <div>
                 <button class="btn-gallery" (click)="editProduct(item)" routerLink="/gestion">Editar</button>
             </div>

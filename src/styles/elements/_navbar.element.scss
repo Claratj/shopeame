@@ -1,4 +1,4 @@
-.navbar {
+.menu {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     background-color: var(--color-orange);
     min-width: 320px;
 
-    &__div{
+    &_div{
         color: var(--color-grey-item);
 
         img{
@@ -26,7 +26,6 @@
         }
         a:hover{
             background-color:rgba(235, 242, 255, 0.3);
-
         }
 
         p{

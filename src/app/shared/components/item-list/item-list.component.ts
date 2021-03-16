@@ -1,13 +1,13 @@
-
-import { ProductsService } from '../../services/products.service';
 import { Component, Input, OnInit } from '@angular/core';
+import { ProductsService } from '../../services/products.service';
+
 
 @Component({
-  selector: 'app-item',
-  templateUrl: './item.component.html',
-  styleUrls: ['./item.component.scss']
+  selector: 'app-item-list',
+  templateUrl: './item-list.component.html',
+  styleUrls: ['./item-list.component.scss']
 })
-export class ItemComponent implements OnInit {
+export class ItemListComponent implements OnInit {
 
   @Input() list: any;
 
