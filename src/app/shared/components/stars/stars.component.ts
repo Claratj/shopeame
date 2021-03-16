@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ProductsService } from '../../services/products.service';
+
 
 @Component({
   selector: 'app-stars',
@@ -7,11 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarsComponent implements OnInit {
 
-  starRating = 0;
+  @Input() item: any;
+  @Input() starRating = 0;
 
-  constructor() { }
+  // list: any;
+
+
+  constructor(private productsService: ProductsService) { }
 
   ngOnInit(): void {
+
+    // this.getProducts();
   }
+
+  // getProducts() {
+  //   this.productsService.getProducts().subscribe(products => {
+  //     this.list = products;
+  //     // this.clearProd = products;
+  //   });
+  // }
 
 }
