@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ItemComponent } from './shared/components/item/item.component';
 import { ItemListComponent } from './shared/components/item-list/item-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StarsComponent } from './shared/components/stars/stars.component';
 // import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MenuComponent,
     GestionPageComponent,
     ItemComponent,
-    ItemListComponent
+    ItemListComponent,
+    StarsComponent
   ],
   imports: [
     BrowserModule,
