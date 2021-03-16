@@ -1,6 +1,6 @@
 <div class="main-container">
     <h2>Creación/edición de productos</h2>
-    
+
     <div class=" d-sm-flex">
         <div class="div-form col-8">
             <form class="form-group" [formGroup]="gestionForm" (ngSubmit)="addEditProducts()">
@@ -55,7 +55,7 @@
         </div>
         <!-- Hacemos un div con los valores del objeto que vamos introduciendo en el formulario -->
         <div class="preview col-4">
-            <p>Preview del producto:</p>
+            <p class="p-gestion">Preview del producto:</p>
             <div class="preview-card">
 
                 <app-item [item]="newProduct"></app-item>
