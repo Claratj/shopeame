@@ -1,12 +1,12 @@
-  .div-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group {
-    margin: 4.5rem 0 4rem 0;
-    border-right: solid 2px var(--color-orange-dark);
-  }
+.div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin: 4.5rem 0 4rem 0;
+  border-right: solid 2px var(--color-orange-dark);
+}
  
   // @media (max-width: 576px){
 
@@ -26,21 +26,25 @@
   // }
 
   
-  .input-form {
-    width: 90%;
-    margin: 1rem;
-  }
-  
-  label {
-    margin-left: 1.1rem;
-  }
+.input-form {
+  width: 90%;
+  margin: 1rem;
+}
 
-  .preview-card {
+label {
+  margin-left: 1.1rem;
+}
+
+.preview {
+  margin: 4.5rem 0 1rem 0;
+  max-height: 39.35rem;
+
+  &-card {
     margin: auto 0;
-    // width: 40%;
     height: 30rem;
     padding: 1rem;
-    }
+  }
+}
   
 .btn-gestion-container {
   margin: 0 1rem;
