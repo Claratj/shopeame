@@ -95,7 +95,7 @@
   }
 
   .div-form {
-    width: 50%;
+    width: 63%;
     flex-direction: column;
     align-items: flex-start;
     }
@@ -113,19 +113,21 @@
 
   .input-form {
     width: 100%;
-    margin: 1rem;
+    margin: 1rem 1.5rem 1rem 0;
   }
 
-  label {
-    margin-left: 1.1rem;
-  }
+  // label {
+  //   margin-left: 1.1rem;
+  // }
   .p-gestion {
     margin-bottom: 3.5rem;
   }
   
   .preview {
-    margin: auto;
+    margin: 4.5rem auto;
     max-height: 39.35rem;
+    align-items: flex-start;
+
   
     &-card {
       margin: auto 0;
