@@ -8,6 +8,8 @@
     color: var(--color-white);
     line-height: 143%;
 
+  
+
     nav {
         display: flex;
         flex-direction: column;
@@ -15,7 +17,7 @@
         margin: 50px 0 37px 0;
     }
 
-    &__container{
+    &_container{
         display: flex;
         justify-content: center;
         padding-top: 1rem;
@@ -36,7 +38,7 @@
             border-right: solid 1px var(--color-white);
         }
     }
-    &__copy {
+    &_copy {
         margin-top: 3rem;
         color: var(--color-white);
     }
