@@ -35,15 +35,11 @@
            text-decoration: none;
         }
         
-        .margin{
+        .margin, 
+        .margin-i{
             width: 8rem;
-            // border-left: solid 1px var(--color-white);
-            // border-right: solid 1px var(--color-white);
         }
-        .marginIns{
-            width: 8rem;
-            // border-right: solid 1px var(--color-white);
-        }
+    
     }
     &_copy {
         margin-top: 3rem;
@@ -61,5 +57,24 @@
         a:last-of-type {
             margin-bottom: 1.3rem;
         }
+    }
+}
+
+@media (min-width: 760px) {
+
+    .footer_container{
+
+        flex-direction: row;
+        a:last-of-type {
+            margin-bottom: 0;
+        }        
+    }
+
+    .margin {
+        border-left: solid 1px var(--color-white);
+        border-right: solid 1px var(--color-white);
+    }
+    .margin-i{
+        border-right: solid 1px var(--color-white);
     }
 }
