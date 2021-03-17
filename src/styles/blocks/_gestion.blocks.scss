@@ -4,6 +4,13 @@
 .preview-card {
   display: flex;
 }
+
+.preview-card {
+  background: var(--color-white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
+  float: left;
+  border-radius: 20px;
+}
  
 
 @media (min-width: 300px){
@@ -17,6 +24,13 @@
     width: 100%;
     border-right: none;
     border-bottom: solid 2px var(--color-orange-dark);
+
+    &-input {
+      width: 100%;
+      & input {
+        width: 100%;
+      }
+    }
   }
 
   label {
@@ -102,7 +116,7 @@
   
   .form-group {
     margin: 4.5rem 0 4rem 0;
-    padding-right: 3rem;
+    padding-right: 2.5rem;
     border-right: solid 2px var(--color-orange-dark);
     align-items: flex-start;
   }
@@ -116,9 +130,7 @@
     margin: 1rem 1.5rem 1rem 0;
   }
 
-  // label {
-  //   margin-left: 1.1rem;
-  // }
+
   .p-gestion {
     margin-bottom: 3.5rem;
   }
@@ -126,16 +138,11 @@
   .preview {
     margin: 4.5rem auto;
     max-height: 39.35rem;
-    align-items: flex-start;
   
     &-card {
       margin: auto 0;
       height: 30rem;
       padding: 1rem;
-    	background: var(--color-white);
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
-      float: left;
-      border-radius: 20px;
     }
   }
     
