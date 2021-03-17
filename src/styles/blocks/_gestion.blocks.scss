@@ -102,7 +102,7 @@
   
   .form-group {
     margin: 4.5rem 0 4rem 0;
-    padding-right: 2rem;
+    padding-right: 3rem;
     border-right: solid 2px var(--color-orange-dark);
     align-items: flex-start;
   }
@@ -127,12 +127,15 @@
     margin: 4.5rem auto;
     max-height: 39.35rem;
     align-items: flex-start;
-
   
     &-card {
       margin: auto 0;
       height: 30rem;
       padding: 1rem;
+    	background: var(--color-white);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
+      float: left;
+      border-radius: 20px;
     }
   }
     
