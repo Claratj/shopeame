@@ -33,7 +33,7 @@ article {
 
 @media (min-width: 320px) {
 	.main-container {
-		width: 320px;
+		width: 20rem;
 		margin: 5rem 0;
 		padding: 2.5rem 1.8rem;;
 
@@ -42,14 +42,14 @@ article {
 
 @media (min-width: 568px) {
 	.main-container {
-		width: 530px;
+		width: 33.125rem;
 		margin: 5rem auto;
 		padding: 2.5rem 1.8rem;;
 
 	}
 	.item-card {
 		width: 14rem;
-		
+
 		&_stars-btn {
 			flex-direction: column;
 			align-items: center;
@@ -59,7 +59,7 @@ article {
 
 @media (min-width: 768px) {
 	.main-container {
-		max-width: 1200px;
+		// width: 48rem;
 		margin: 5rem auto;
 		padding: 2.5rem 3.75rem;
 
