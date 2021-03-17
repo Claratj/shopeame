@@ -18,7 +18,7 @@ article {
 }
 
 .item-card {
-	max-height: 22.75rem;
+	height: 22.5rem;
 	padding: 1rem;
 	margin: 1rem 0;
 	width: 16.125rem;
@@ -37,11 +37,18 @@ article {
 		padding: 2.5rem 1.8rem;;
 
 	}
+	.item-card{
+		width: 100%;
+
+		&_stars-btn {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 }
 
 @media (min-width: 568px) {
 	.main-container {
-		// width: 33.125rem;
 		margin: 5rem auto;
 		padding: 2.5rem 1.8rem;;
 
@@ -49,10 +56,7 @@ article {
 	.item-card {
 		width: 14rem;
 
-		&_stars-btn {
-			flex-direction: column;
-			align-items: center;
-		}
+		
 	}
 }
 
@@ -63,11 +67,6 @@ article {
 		padding: 2.5rem 3.75rem;
 
 	}
-	// .item-card {
-	// 	max-height: 22.75rem;
-	// 	padding: 1rem;
-	// 	margin: 1rem 0;
-	// 	width: 16.125rem;
-	// }
+
 }
 
