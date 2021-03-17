@@ -14,8 +14,14 @@ p, label {
 	line-height: 1.5rem;
 }
 
-@media (min-width: 300px){
+@media (min-width: 320px){
 	h2, p {
 		text-align: center;
+	}
+}
+
+@media (min-width: 768px){
+	h2, p {
+		text-align: justify;
 	}
 }

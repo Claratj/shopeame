@@ -6,8 +6,8 @@
         <div>
             <p>{{item.description}}</p>
         </div>
-        <h2>{{item.price}}€</h2>
-        <div class="d-flex justify-content-between align-items-center">
+        <h3>{{item.price}}€</h3>
+        <div class="item-card_stars-btn">
             <app-stars [starRating]="item.stars"></app-stars>
             <div>
                 <button class="btn-gallery" (click)="editProduct(item)" routerLink="/gestion">Editar</button>

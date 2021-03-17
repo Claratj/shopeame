@@ -1,20 +1,20 @@
 {
   "products": [
     {
-      "id": 1,
       "name": "Zapatos Vintage",
       "price": 49.99,
       "description": "Bellos zapatos antiguos para Hipsters.",
-      "stars": 4.5,
-      "image": "https://i.ibb.co/4j85tBM/shoes.jpg"
+      "image": "https://i.ibb.co/4j85tBM/shoes.jpg",
+      "stars": "4.5",
+      "id": 1
     },
     {
-      "id": 3,
       "name": "Bolígrafos de colores",
       "price": 1.99,
       "description": "Estupendos bolígrafos de colores.",
-      "stars": 1,
-      "image": "https://i.ibb.co/s5m7HKt/lapiceros.jpg"
+      "image": "https://i.ibb.co/s5m7HKt/lapiceros.jpg",
+      "stars": "2",
+      "id": 3
     },
     {
       "id": 4,
@@ -43,7 +43,7 @@
     {
       "name": "Pamela",
       "price": "29",
-      "description": "Todo es mejor y más verde con una plantita en casa.",
+      "description": "Todo es mejor con una plantita.",
       "image": "https://cdn.thecolvinco.com/photos_cache_thumb/pamela/pamela-c86263db-de00-4d85-af1a-65901bed97ef.jpg",
       "stars": "4",
       "id": 8

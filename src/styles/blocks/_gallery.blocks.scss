@@ -1,5 +1,9 @@
 .p-gallery {
 
+	&_view{
+		display: flex;
+		flex-direction: row;
+	}
 	
 	&_img{
 		max-height: 165.5px;
@@ -10,9 +14,46 @@
 
 .search {
 	width: 35%;
-	margin-top: 1rem;
 	display: flex;
-	justify-content: flex-end;
 }
 
 
+@media (min-width: 320px) {
+	.p-gallery_view {
+		// flex-direction: column;
+		display: none;
+	}
+	.search {
+		justify-content: center;
+		margin: 1rem auto;
+	}
+}
+
+@media (min-width: 568px) {
+	.p-gallery{
+		&_view {
+			display: none;
+		}
+		// &_img {
+		// 	max-width: 150px;
+		// 	max-height: 100px;
+		// 	object-fit: contain;
+	
+		// }
+	}
+	.search {
+		justify-content: center;
+		margin: 1rem auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.p-gallery_view {
+		display: flex;
+		flex-direction: row;
+	}
+	.search {
+		justify-content: flex-end;
+		margin: 1rem 0;
+	}
+}
