@@ -13,3 +13,9 @@ p, label {
 	color: var(--color-grey-text);
 	line-height: 1.5rem;
 }
+
+@media (max-width: 350px){
+	h2, p {
+		text-align: center;
+	}
+}

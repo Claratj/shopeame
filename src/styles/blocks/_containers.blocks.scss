@@ -28,7 +28,7 @@ article {
 }
 
 
-@media (min-width: 320px) {
+@media (max-width: 350px) {
 	.main-container {
 		width: 320px;
 		overflow-x: hidden;

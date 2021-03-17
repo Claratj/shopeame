@@ -1,5 +1,9 @@
 .p-gallery {
 
+	&_view{
+		display: flex;
+		flex-direction: row;
+	}
 	
 	&_img{
 		max-height: 165.5px;
@@ -16,3 +20,13 @@
 }
 
 
+@media (max-width: 350px) {
+	.p-gallery_view {
+		// flex-direction: column;
+		display: none;
+	}
+	.search {
+		justify-content: center;
+		margin: 1rem auto;
+	}
+}
