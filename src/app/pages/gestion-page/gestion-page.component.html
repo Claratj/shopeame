@@ -1,60 +1,74 @@
 <div class="main-container">
+
     <h2>Creación/edición de productos</h2>
 
-    <div class=" d-sm-flex">
-        <div class="div-form col-8">
+    <div class="gestion-container d-sm-flex">
+        <div class="div-form">
+            
             <form class="form-group" [formGroup]="gestionForm" (ngSubmit)="addEditProducts()">
-                <label for="name">Nombre del producto:</label>
-                <input class="input-form" type="text" id="name" placeholder="{{ newProduct.name }}"
-                    formControlName="name" />
-                <!-- Required -->
-                <p *ngIf="submitted && !gestionForm.get('name').valid">
-                    El nombre del producto es obligatorio y debe tener como minimo 5
-                    caracteres.
-                </p>
 
-                <label for="price">Precio:</label>
-                <input class="input-form" type="text" id="price" placeholder="{{ newProduct.price }}"
-                    formControlName="price" />
-                <!-- Required -->
-                <p *ngIf="submitted && !gestionForm.get('price').valid">
-                    El precio del producto es obligatorio y debe tener como minimo 1
-                    caracter.
-                </p>
+                <div className="form-group-input">
+                    <label for="name">Nombre del producto:</label>
+                    <input class="input-form" type="text" id="name" placeholder="{{ newProduct.name }}"
+                        formControlName="name" />
+                    <!-- Required -->
+                    <p *ngIf="submitted && !gestionForm.get('name').valid">
+                        El nombre del producto es obligatorio y debe tener como minimo 5
+                        caracteres.
+                    </p>
+                </div>
 
-                <label for="description">Descripción:</label>
-                <input class="input-form" type="text" id="description" placeholder="{{ newProduct.description }}"
-                    formControlName="description" />
-                <!-- Required -->
-                <p *ngIf="submitted && !gestionForm.get('description').valid">
-                    La descripción del producto es obligatoria y debe tener como maximo 35
-                    caracteres.
-                </p>
+                <div className="form-group-input">
+                    <label for="price">Precio:</label>
+                    <input class="input-form" type="text" id="price" placeholder="{{ newProduct.price }}"
+                        formControlName="price" />
+                    <!-- Required -->
+                    <p *ngIf="submitted && !gestionForm.get('price').valid">
+                        El precio del producto es obligatorio y debe tener como minimo 1
+                        caracter.
+                    </p>
+                </div>
 
-                <label for="image">Ruta de la imagen:</label>
-                <input class="input-form" type="text" id="image" placeholder="{{ newProduct.image }}"
-                    formControlName="image" />
-                <!-- Required -->
-                <p *ngIf="submitted && !gestionForm.get('image').valid">
-                    La ruta de la imagen del producto es obligatoria.
-                </p>
+                <div className="form-group-input">
+                    <label for="description">Descripción:</label>
+                    <input class="input-form" type="text" id="description" placeholder="{{ newProduct.description }}"
+                        formControlName="description" />
+                    <!-- Required -->
+                    <p *ngIf="submitted && !gestionForm.get('description').valid">
+                        La descripción del producto es obligatoria y debe tener como maximo 35
+                        caracteres.
+                    </p>
+                </div>
 
-                <label for="stars">Valoración:</label>
-                <input class="input-form" type="text" id="stars" placeholder="{{ newProduct.stars }}"
-                    formControlName="stars" />
-                <div class="d-flex">
-                    <div class="btn-gestion-container">
-                        <input class="btn-form" type="submit" value="Guardar" (click)="buttonMessage($event)" />
-                    </div>
-                    <div *ngIf="idProd !== ''">
-                        <input class="btn-form btn-form__delete" type="submit" value="Borrar" (click)="removeProduct()"
-                            routerLink="/products" />
+                <div className="form-group-input">
+                    <label for="image">Ruta de la imagen:</label>
+                    <input class="input-form" type="text" id="image" placeholder="{{ newProduct.image }}"
+                        formControlName="image" />
+                    <!-- Required -->
+                    <p *ngIf="submitted && !gestionForm.get('image').valid">
+                        La ruta de la imagen del producto es obligatoria.
+                    </p>
+                </div>
+
+                <div className="form-group-input">
+                    <label for="stars">Valoración:</label>
+                    <input class="input-form" type="text" id="stars" placeholder="{{ newProduct.stars }}"
+                        formControlName="stars" />
+                    <div class="div-buttons d-flex">
+                        <div class="btn-gestion-container">
+                            <input class="btn-form" type="submit" value="Guardar" (click)="buttonMessage($event)" />
+                        </div>
+                        <div *ngIf="idProd !== ''">
+                            <input class="btn-form btn-form__delete" type="submit" value="Borrar"
+                                (click)="removeProduct()" routerLink="/products" />
+                        </div>
                     </div>
                 </div>
+
             </form>
         </div>
         <!-- Hacemos un div con los valores del objeto que vamos introduciendo en el formulario -->
-        <div class="preview col-4">
+        <div class="preview">
             <p class="p-gestion">Preview del producto:</p>
             <div class="preview-card">
 
@@ -63,3 +77,4 @@
             </div>
         </div>
     </div>
+</div>
