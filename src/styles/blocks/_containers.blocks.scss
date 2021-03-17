@@ -24,8 +24,7 @@ article {
 	width: 16.125rem;
 	&_stars-btn {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		
 	}
 }
 
@@ -66,6 +65,13 @@ article {
 		margin: 5rem auto;
 		padding: 2.5rem 3.75rem;
 
+	}
+
+	.item-card{
+		&_stars-btn {
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 
 }
