@@ -19,3 +19,9 @@ p, label {
 		text-align: center;
 	}
 }
+
+@media (min-width: 768px){
+	h2, p {
+		text-align: justify;
+	}
+}
