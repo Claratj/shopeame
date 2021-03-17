@@ -4,10 +4,10 @@
 
     <div class="gestion-container d-sm-flex">
         <div class="div-form">
-            
+
             <form class="form-group" [formGroup]="gestionForm" (ngSubmit)="addEditProducts()">
 
-                <div className="form-group-input">
+                <div class="form-group-input">
                     <label for="name">Nombre del producto:</label>
                     <input class="input-form" type="text" id="name" placeholder="{{ newProduct.name }}"
                         formControlName="name" />
@@ -18,7 +18,7 @@
                     </p>
                 </div>
 
-                <div className="form-group-input">
+                <div class="form-group-input">
                     <label for="price">Precio:</label>
                     <input class="input-form" type="text" id="price" placeholder="{{ newProduct.price }}"
                         formControlName="price" />
@@ -29,7 +29,7 @@
                     </p>
                 </div>
 
-                <div className="form-group-input">
+                <div class="form-group-input">
                     <label for="description">Descripción:</label>
                     <input class="input-form" type="text" id="description" placeholder="{{ newProduct.description }}"
                         formControlName="description" />
@@ -40,7 +40,7 @@
                     </p>
                 </div>
 
-                <div className="form-group-input">
+                <div class="form-group-input">
                     <label for="image">Ruta de la imagen:</label>
                     <input class="input-form" type="text" id="image" placeholder="{{ newProduct.image }}"
                         formControlName="image" />
@@ -50,7 +50,7 @@
                     </p>
                 </div>
 
-                <div className="form-group-input">
+                <div class="form-group-input">
                     <label for="stars">Valoración:</label>
                     <input class="input-form" type="text" id="stars" placeholder="{{ newProduct.stars }}"
                         formControlName="stars" />

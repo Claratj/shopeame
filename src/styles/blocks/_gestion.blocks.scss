@@ -119,7 +119,7 @@
   }
 
   .input-form {
-    width: 90%;
+    width: 100%;
     margin: 1rem;
   }
 
@@ -143,6 +143,13 @@
     
   .btn-gestion-container {
     margin: 0 1rem;
-  } 
+  }
+  
+  .div-buttons {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
 }
