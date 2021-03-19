@@ -33,7 +33,7 @@ export class ProductsService {
 
   //petición a la API
   getProducts() {
-    return this.http.get('http://localhost:3000/products')
+    return this.http.get('https://angular-shopeame-backend.herokuapp.com/products')
   }
 
   //envío a gestion para editar
@@ -43,16 +43,16 @@ export class ProductsService {
 
   //funcion para introducir ptos nuevos al json
   postProduct(newProduct: any) {
-    return this.http.post('http://localhost:3000/products', newProduct)
+    return this.http.post('https://angular-shopeame-backend.herokuapp.com/products', newProduct)
   }
 
   //funcion para sobreescribir productos del json
   putProduct(editedProduct, idProd) {
-    return this.http.put('http://localhost:3000/products/' + idProd, editedProduct);
+    return this.http.put('https://angular-shopeame-backend.herokuapp.com/products/' + idProd, editedProduct);
   }
 
   deleteProduct(idProd) {
-    return this.http.delete('http://localhost:3000/products/' + idProd);
+    return this.http.delete('https://angular-shopeame-backend.herokuapp.com/products/' + idProd);
   }
 
 }
